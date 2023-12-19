@@ -10,6 +10,14 @@ function App() {
         </div>
 
       </div>
+        <div className="Section">
+            <div className="Content-area-one"></div>
+
+        </div>
+        <div className="Section">
+            <div className="Content-area-two"></div>
+
+        </div>
 
     </div>
   );

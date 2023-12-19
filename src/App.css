@@ -35,3 +35,22 @@
   width: 130px;
   height: 130px;
 }
+.Section{
+  width: 100%;
+  height: calc(50% - 75px);
+  background-color: darkgreen;
+  box-sizing: border-box;
+  padding: 20px;
+
+}
+
+.Content-area-one{
+  height: calc(100% - 40px);
+  width: 60%;
+  background-color: red;
+}
+.Content-area-two{
+  height: calc(100% - 40px);
+  width: 60%;
+  background-color: blue;
+}
