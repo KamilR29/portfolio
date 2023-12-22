@@ -1,6 +1,8 @@
 import avatar from './image/hmmm.png'
 import cloud_image from './image/sticker.png'
-import './App.css';
+import './App.scss';
+import './componenets/HeaderButton'
+import {HeaderButton} from "./componenets/HeaderButton";
 
 
 function App() {
@@ -10,6 +12,9 @@ function App() {
         <div className="Avatar">
           <img className="Avatar-icon" src={avatar} alt="It is avtar icon" />
         </div>
+        <HeaderButton name="About Me"/>
+        <HeaderButton name="Skils"/>
+        <HeaderButton name="Projects"/>
 
       </div>
         <div className="Section">
