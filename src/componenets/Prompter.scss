@@ -1,0 +1,38 @@
+.PrompterWindow{
+  background: black;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  color: white;
+  font-size: small;
+  border-radius: 20px 20px 20px 20px;
+  box-sizing: border-box;
+  padding: 3px;
+  font-family: Consolas, serif;
+  border: 2px solid #292929;
+
+
+}
+.TopBar{
+  background: #7d7c7c;
+  height: 4lvh;
+  width: 100%;
+  border-radius: 15px 15px 15px 15px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-top: 5px;
+
+}
+.PlayButton{
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+  background:url('../image/play-button.png') no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+
+
+
+}

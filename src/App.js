@@ -3,6 +3,7 @@ import cloud_image from './image/sticker.png'
 import './App.scss';
 import './componenets/HeaderButton'
 import {HeaderButton} from "./componenets/HeaderButton";
+import {Prompter} from "./componenets/Prompter";
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
         </div>
         <div className="Section">
-            <div className="Content-area-two"></div>
+            <div className="Content-area-two"><Prompter/></div>
             <img className="Cloud-image" src={cloud_image} alt=" It is pepple ont the cloud"/>
 
         </div>
