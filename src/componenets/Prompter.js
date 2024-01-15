@@ -1,25 +1,24 @@
 import React, {useEffect, useRef, useState} from "react";
 import "./Prompter.scss"
-import buttonImage from '../image/play-button.png'
+
+
 
 
 export function Prompter(){
 
-    const [texts, setTexts] = useState([]);
+    const [texts, setTexts] = useState(["//Play to know something about me"]);
     const [isStarted, setIsStarted] = useState(false);
 
     useEffect(() => {
         if (isStarted) {
-            const aboutMe = [
-                'Hello there! Im [Your Name], a passionate [Your Occupation/Interest]. ',
-                'I thrive on [Specific Passion/Interest], constantly seeking new ways ',
-                'to [Goal or Achievement]. With a background in [Your Background/Skills],',
-                'I bring a unique perspective to everything I do. Outside of [Work/Passion], ',
-                'youll often find me [Hobbies/Activities], embracing [Adjectives that ',
-                'describe your personality, like adventurous, creative, analytical, etc.]. ',
-                'I believe in [Core Belief/Philosophy], and Im dedicated to [Goal/Mission]. ',
-                'Lets connect and explore the world together!'];
-
+            const aboutMe = ['',
+                'Im a young programmer specializing in Java, with additional knowledge of Python, C#, and web technologies.',
+                'Currently, I am working at Ingersoll Rand, developing websites using OCM. ',
+                'I have also gained experience through international internships and projects carried out for local companies.',
+                'I am a full-time student at the Polish-Japanese Academy of Computer Technology,' ,
+                'continuously enhancing my skills.',
+                'I am open to new challenges and professional growth opportunities.',
+                'I always try to do my best at work.'];
             let index = 0;
             const interval = setInterval(() => {
                 if (index < aboutMe.length) {
@@ -37,19 +36,36 @@ export function Prompter(){
         }
     }, [isStarted]);
     const startAddingTexts = () => {
-        setIsStarted(true);
+        if (isStarted === false){
+            setTexts([])
+        }
+
+            setIsStarted(true);
+
+
     };
+    const clearPrompter = () => {
+        setTexts(['Process finished with exit code 0'])
+        setIsStarted(false)
+    }
 
 
 
 
     return(
         <div className="PrompterWindow">
-            <div className="TopBar"><button className="PlayButton" onClick={startAddingTexts}></button></div>
+            <div className="TopBar">
 
-            {texts.map((text, index) => (
-                <p key={index}>{text}</p>
-            ))}
+                <button className="PlayButton" onClick={startAddingTexts}></button>
+                <button className="StopButton" onClick={clearPrompter}></button>
+            </div>
+
+            <div className="PrompterCode">
+                {texts.map((text, index) => (
+                    <p key={index}>{text}</p>
+                ))}
+            </div>
+
 
         </div>);
 

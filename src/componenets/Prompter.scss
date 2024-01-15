@@ -13,9 +13,10 @@
   border: 2px solid #292929;
 
 
+
 }
 .TopBar{
-  background: #7d7c7c;
+  background: #242424;
   height: 4lvh;
   width: 100%;
   border-radius: 15px 15px 15px 15px;
@@ -25,14 +26,42 @@
 
 }
 .PlayButton{
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   padding: 10px;
-  background:url('../image/play-button.png') no-repeat;
+  background:url('../image/play.png') no-repeat;
   background-size: cover;
   border: none;
   cursor: pointer;
 
 
 
+}
+.StopButton{
+  height: 25px;
+  width: 25px;
+  padding: 10px;
+  background:url('../image/stop.png') no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+
+
+
+}
+.PrompterCode{
+  height: calc(100% - 4lvh - 5px - 6px);
+  border-radius: 0 0 20px 20px;
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+::-webkit-scrollbar{
+  background: rgba(43,43,43,100);
+  border-radius: 20px 20px 20px 20px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgba(92,92,92,100);
+  border-radius: 20px 20px 20px 20px;
 }

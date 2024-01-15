@@ -1,21 +1,47 @@
 $button-color: #d9d4d4;
-.Button{
+.Button {
+    position: relative;
     width: 300px;
     height: 80px;
     margin-top: 20px;
     margin-left: 10%;
-    border-radius: 80px 80px 80px 80px;
+    border-radius: 80px;
     border: none;
     font-family: "Cascadia Code", serif;
     font-weight: bolder;
     font-size: larger;
     background-color: $button-color;
+    overflow: hidden;
+    cursor: pointer;
 
-}
-.Button:hover{
-    background-color: rgba(77, 76, 76,0.6);
+    span {
+        position: relative;
+        z-index: 1;
+    }
 
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.4), transparent);
+        transition: transform 0.3s ease;
+    }
 
+    &::before {
+        left: -100%;
+        transform-origin: right;
+    }
 
+    &::after {
+        right: -100%;
+        transform-origin: left;
+    }
 
+    &:hover::before,
+    &:hover::after {
+        transform: translateX(100%);
+    }
 }

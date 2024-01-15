@@ -1,0 +1,69 @@
+.SocialMediaWindow{
+
+  margin-top: 20px;
+  margin-left: 20px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  min-width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.ImageGithub{
+  width: 100px;
+  height: auto;
+  box-sizing: border-box;
+
+
+
+}
+
+.ImageLinkedin{
+  width: 100px;
+  height: auto;
+  margin-left: 15%;
+  box-sizing: border-box;
+
+}
+
+.ImageGmail{
+  width: 100px;
+  height: auto;
+  margin-left: 15%;
+  box-sizing: border-box;
+  margin-right: 5%;
+
+}
+
+.Image{
+  height: 100%;
+  width: 100%;
+}
+.ImageGithub:hover{
+  border-radius: 150px 150px 150px 150px;
+  background: rgba(122, 122, 122,0.4);
+  -webkit-box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  -moz-box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  transition: all 0.5s;
+
+}
+.ImageLinkedin:hover{
+  border-radius: 150px 150px 150px 150px;
+  background: rgba(122, 122, 122,0.4);
+  -webkit-box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  -moz-box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  transition: all 0.5s;;
+}
+.ImageGmail:hover{
+  border-radius: 150px 150px 150px 150px;
+  background: rgba(122, 122, 122,0.4);
+  -webkit-box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  -moz-box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  box-shadow: 0 0 57px 0 rgba(122, 122, 122, 1);
+  transition: all 0.5s;
+}

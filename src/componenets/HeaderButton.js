@@ -3,12 +3,12 @@ import './HeaderButton.scss'
 
 export function HeaderButton(props){
 
-    const moveToPage = () =>{
-        window.location = "https://github.com/"
-    }
+    // const moveToPage = () =>{
+    //     window.location = "../pages/AboutMe.js"
+    // }
 
     return(
-        <button className="Button" onClick={()=>moveToPage()}>{props.name}</button>
+        <button className="Button" >{props.name}</button>
     );
 
 
